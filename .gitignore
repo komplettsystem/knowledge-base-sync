@@ -1,0 +1,22 @@
+# Secret - personal access token for Onyx, never commit
+token
+
+# Generated/runtime state, not source
+mirror/
+manifest.json
+sync.log
+
+# Build artifact - source is mirror_reader.c, rebuild with the Makefile/README instructions
+mirror_reader
+
+# Machine-specific: which Documents subfolder is tracked, see README
+source_dir.conf
+
+# Machine-specific: which destinations are active and how to run them
+destinations.conf
+
+# Rotated log backup, see run_sync.sh
+sync.log.1
+
+# Python bytecode cache (retire_source.py imports sync.py as a module)
+__pycache__/
